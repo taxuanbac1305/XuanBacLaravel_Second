@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('address');
             $table->unsignedInteger('roles')->default(0);
+            $table->string("image");
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('update_by')->nullable();
             $table->timestamps();

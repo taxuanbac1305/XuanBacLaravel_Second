@@ -51,4 +51,5 @@ class HomeController extends Controller
         return view('frontend.brand.show_brand')->with('category',$cate_product)->with('brand',$brand_product)->with('brand_by_id',$brand_by_id)
         ->with('brand_name',$brand_name);
     }
+
 }

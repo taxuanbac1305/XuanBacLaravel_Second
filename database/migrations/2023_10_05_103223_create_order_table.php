@@ -16,12 +16,12 @@ return new class extends Migration
         Schema::create('db_order', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('user_id');
-            $table->string('name');
-            $table->string('gender');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('address');
-
+            $table->string('delivery_name');
+            $table->string('delivery_gender');
+            $table->string('delivery_email');
+            $table->string('delivery_phone');
+            $table->string('delivery_address');
+            $table->string('note');
             $table->unsignedInteger('created_by');
             $table->unsignedInteger('update_by')->nullable();
             $table->timestamps();

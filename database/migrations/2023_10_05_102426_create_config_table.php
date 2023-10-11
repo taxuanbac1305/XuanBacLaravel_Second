@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string("email");
             $table->string("phone");
             $table->string("zalo");
+            $table->string("facebook");
             $table->string("address");
+            $table->string("youtube");
             $table->string("metadesc");
             $table->string("metakey");
             $table->unsignedInteger('created_by');

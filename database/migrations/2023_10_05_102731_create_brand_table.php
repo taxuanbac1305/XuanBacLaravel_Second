@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string("name");
             $table->string("slug");
+            $table->string("image");
             $table->unsignedInteger('sort_order');
             $table->string("description");
 
